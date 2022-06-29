@@ -57,9 +57,22 @@ div {
   margin-top: 10vmin;
   
 }
-/*
-@media  (max-width: 500px) {
+
+/*has to be a more effecient way to write the below */
+
+@media  (max-width: 768px) {
   body {
-color: red;
-background-color: #ff9962; }
-}*/
+   color: green;
+  }
+ }
+
+@media  (max-width: 370px) {
+ body {
+  color: red;
+ }
+}
+
+
+ 
+
+ 
