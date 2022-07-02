@@ -345,16 +345,13 @@ padding: 15px;
     }
   }
 
-  @media (max-width: 370px) {
-    nav li a {
-      float: left;
-      margin: 1px;
-      font-size: 5vw;
-    
-    
-    }
+@media (max-width: 370px) {
+  nav li {
+    float: center; 
+    margin: 4px;
+    font-size: 5vw;
   }
-   
+}
 
   @media (max-width: 370px) {
     .blog-link-container div li {
