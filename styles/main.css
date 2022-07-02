@@ -1,16 +1,32 @@
 .nav-container {
   background-color:  #7D9D9C;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 15px;
   margin: 0px;
   width: 98vmax;
   height: 2vmax;
   position: fixed; 
   top: 0;
-  text-align: right;
   /* why does the text go off the page whe wdith is set to 100vw. 
   Research text align and maybe the relative values. */
 }
 
+nav ul {
+margin: 0px;
+padding: 0px;
+list-style: none;
+}
+
+nav li {
+  float: right;
+  margin: 10px;
+}
+
+nav a {
+  color: #090300;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
 body {text-align: left;
   margin: 0px;
