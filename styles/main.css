@@ -2,7 +2,8 @@
   background-color:  #7D9D9C;
   padding: 15px;
   margin: 0px;
-  width: 98vw;
+  width: 98vmax;
+  height: 2vmax;
   position: fixed; 
   top: 0;
   text-align: right;
@@ -14,22 +15,16 @@
 body {text-align: left;
   margin: 0px;
   background-color:  #F0EBE3;
-  color: #F0EBE3;
+  color: #39656b;
 }
 
-div {
-  background-color: #576F72;
-  padding: 5px; 
-  margin: 20px;
-
-}
 
 h1 {text-align: center;
     font-family: sans-serif;   
-    color:  #F0EBE3; 
+    color:#39656b;
     width:80vm;
     font-size: 5vmin;
-    margin-bottom: 5vmin;
+    margin: 90px 0px 20px;
 }
 
 
@@ -37,14 +32,14 @@ h1 {text-align: center;
 h2 {text-align: center;
   font-family: sans-serif;    
   font-size: 2.5vmin;
-  color: #E4DCCF;
+  color:#7D9D9C;
   margin-bottom: 2vmin;
 }
 
 h3 {text-align: center;
   font-family: sans-serif;    
   font-size: 1.5vmin;
-  color: #a8a6a6;
+  color: #f00d0d;
   margin-bottom: 8vmin;
 }
 
@@ -79,35 +74,7 @@ span {
 }
 
 
-p {
-  margin: 20px 50px;
-  background-color:#7D9D9C;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 15px;
 
-  padding: 5px;
-
-}
-
-/*d efeinitely a better way than copy and pasting the paragraph tag values */
-
-ul {
-  margin: 40px 30px;
-  background-color:#7D9D9C;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
-
-  padding: 5px;
-}
-
-ol {
-  margin: 40px 30px;
-  background-color:#7D9D9C;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
-
-  padding: 5px;
-}
 
 .box {
   background: pink;
@@ -168,27 +135,141 @@ ol {
 
 .parent-test-container {
   display: flex;
+  justify-content: space-around;
+  flex-direction: row;
   background: #0eeae3;
   width: auto;
   height: 500px;
-  position: relative;
   padding: 0px;
 
 
 }
 .test-container {
-  flex-direction: row;
+  
   background:#E4DCCF;
   margin:0px;
   color: black;
   height: 400px;
   width: 200px;
-  /* position: absolute; */
-  top: 0;
-
-
 }
  
+
+.blog-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0px; 
+  margin: 5px;
+  background-color: #ffffff; 
+}
+
+/* .blog-container div {
+  margin: 0px;
+  padding: 4px;
+  border: 4px black solid;
+} */
+
+
+.blog-post-container {
+
+  width: 50vw;
+  font-family: 'Times New Roman', Times, serif; 
+  padding: 20px;
+}
+
+.blog-post-container div {
+  margin: 20px 0px;
+  border: 1px black solid;
+}
+
+
+.blog-post-container h2 {
+  font-size: 1.5vw;
+  text-align: center;
+  margin: 20px 0px;
+ }
+ 
+ .blog-post-container h3 {
+  font-size: 1vw;
+  text-align: left;
+  margin: 8px 0px;
+ }
+
+ .blog-post-container h4 {
+  font-size: .9vw;
+  text-align: left;
+  font-style: italic;
+  margin: 6px 0px;
+  color: aquamarine;
+ }
+
+
+ .blog-post-container p {
+  font-size: 0.9vw;
+  text-align: left;
+  margin: 5px;
+  color:#ff610b;
+ }
+
+ /* Haders currently have their own gloabl properties thats why colours are chaning */
+
+
+ .blog-link-container {
+
+  width: 15vw;
+  padding: 3px;
+  color: #b392a3; 
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  font-size: 0.9vw; 
+}
+
+.blog-link-container ul {
+ margin: 0px;
+ padding: 0px;;
+ list-style: none;
+}
+
+
+
+.blog-link-container div li {
+  margin: 15px 0px;
+  font-size: 0.9vw;
+  font-style: italic;
+
+}
+
+
+.techblog-container {
+  background-color:#3aa018;
+  margin: 15px;
+}
+
+.techblog-container h2 {
+  padding: 30px;
+}
+.techblog-container p {
+  margin: 20px 50px;
+  background-color:#7D9D9C;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.non-box-div {
+background-color: #39656b;
+padding: 15px;
+}
+
+#identityvalues {
+}
+
+#learningplan{
+
+}
+
+
+
 
 /*has to be a more effecient way to write the media qs */
 
