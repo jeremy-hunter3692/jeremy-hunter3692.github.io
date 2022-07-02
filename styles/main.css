@@ -72,8 +72,28 @@ span {
   margin-top: 10vmin;
   
 }
+/*tech blog styles */ 
 
+.techblog-container {
+  background-color:#3aa018;
+  margin: 15px;
+}
 
+.techblog-container h2 {
+  padding: 30px;
+}
+.techblog-container p {
+  margin: 20px 50px;
+  background-color:#7D9D9C;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.non-box-div {
+background-color: #39656b;
+padding: 15px;
+}
 
 
 .box {
@@ -133,6 +153,7 @@ span {
   padding: 50px 0px;
 }
 
+
 .parent-test-container {
   display: flex;
   justify-content: space-around;
@@ -153,6 +174,7 @@ span {
   width: 200px;
 }
  
+/* blog styles */ 
 
 .blog-container {
   display: flex;
@@ -163,6 +185,7 @@ span {
   background-color: #ffffff; 
 }
 
+
 /* .blog-container div {
   margin: 0px;
   padding: 4px;
@@ -171,15 +194,29 @@ span {
 
 
 .blog-post-container {
-
-  width: 50vw;
   font-family: 'Times New Roman', Times, serif; 
   padding: 20px;
 }
 
+@media (min-width: 769px) {
+  .blog-post-container{ 
+    width: 60vmax;
+  }
+}
+@media (max-width: 768px) {
+  .blog-post-container {
+  width: 80vmax;
+  }
+}
+@media (max-width: 370px) {
+  .blog-post-container {
+  width: 90vmax;
+  }
+}
 .blog-post-container div {
   margin: 20px 0px;
-  border: 1px black solid;
+  padding: 5px; 
+  border: .5px black solid;
 }
 
 
@@ -187,12 +224,14 @@ span {
   font-size: 1.5vw;
   text-align: center;
   margin: 20px 0px;
+  color:#7D9D9C;
  }
  
  .blog-post-container h3 {
   font-size: 1vw;
   text-align: left;
   margin: 8px 0px;
+  color:#39656b;
  }
 
  .blog-post-container h4 {
@@ -200,15 +239,15 @@ span {
   text-align: left;
   font-style: italic;
   margin: 6px 0px;
-  color: aquamarine;
+  color:#090300; 
  }
 
 
  .blog-post-container p {
-  font-size: 0.9vw;
-  text-align: left;
+  font-size:0.9vw;
+  text-align:left;
   margin: 5px;
-  color:#ff610b;
+  color:#090300; 
  }
 
  /* Haders currently have their own gloabl properties thats why colours are chaning */
@@ -240,26 +279,7 @@ span {
 }
 
 
-.techblog-container {
-  background-color:#3aa018;
-  margin: 15px;
-}
 
-.techblog-container h2 {
-  padding: 30px;
-}
-.techblog-container p {
-  margin: 20px 50px;
-  background-color:#7D9D9C;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 15px;
-  padding: 5px;
-}
-
-.non-box-div {
-background-color: #39656b;
-padding: 15px;
-}
 
 #identityvalues {
 }
