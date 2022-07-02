@@ -3,14 +3,15 @@
   font-family: Arial, Helvetica, sans-serif;
   padding: 15px;
   margin: 0px;
-  width: 98vmax;
+  width: 100%;
   height: 2vmax;
   position: fixed; 
   top: 0;
-  /* why does the text go off the page whe wdith is set to 100vw. 
-  Research text align and maybe the relative values. */
 }
+nav {
 
+padding: 0px 10px ;
+}
 nav ul {
 margin: 0px;
 padding: 0px;
@@ -20,6 +21,15 @@ list-style: none;
 nav li {
   float: right;
   margin: 10px;
+}
+
+
+@media (max-width: 370px) {
+  nav li{
+    float: left;
+    margin: 10px;
+  
+  }
 }
 
 nav a {
