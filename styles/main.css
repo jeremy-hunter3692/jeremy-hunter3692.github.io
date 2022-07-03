@@ -1,5 +1,7 @@
+/*--- nav ---*/
+
 .nav-container {
-  background-color:  #7D9D9C;
+  background-color:#7D9D9C;
   padding: 15px;
   margin: 0px;
   width: 100%;
@@ -8,11 +10,11 @@
   top: 0;
 }
 nav {
-padding: 0px 10px ;
+padding: 0px 50px ;
 }
 
 nav ul {
-margin: 0px;
+margin: 0px 15px;
 padding: 0px;
 list-style: none;
 }
@@ -29,12 +31,21 @@ nav a {
   text-transform: uppercase;
 }
 
-/*---  ---*/
+/*--- main ---*/
 
 body {text-align: left;
   margin: 0px;
   background-color:  #F0EBE3;
   color: #39656b;
+}
+
+main {
+  background-color: #39656b;
+  color:#E4DCCF;
+  font-family: sans-serif; 
+  font-size: 1vm;
+  padding: 10px; 
+  margin: 20px; 
 }
 
 
@@ -63,7 +74,6 @@ h3 {text-align: center;
 }
 
 
-
 img { 
   border: 10px solid #ff9962;
   border-radius: 4px;
@@ -87,11 +97,18 @@ span {
   color: #ff610b;
 }
 
+footer {
+  padding: 0px 15px; 
+  color:#090300;
+
+}
+
 #bottomlink {
   margin-top: 10vmin;
   
 }
-/*tech blog styles */ 
+
+/* -- tech blog styles -- */ 
 
 .techblog-container {
   background-color:#3aa018;
@@ -193,51 +210,26 @@ padding: 15px;
   width: 200px;
 }
  
-/* blog styles */ 
+/* -- blog styles -- */ 
 
 .blog-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding: 0px; 
+  padding: 5px; 
   margin: 5px;
   background-color: #ffffff; 
+  width: 90vmax;
 }
-
-
-/* .blog-container div {
-  margin: 0px;
-  padding: 4px;
-  border: 4px black solid;
-} */
-
 
 .blog-post-container {
   font-family: 'Times New Roman', Times, serif; 
   padding: 20px;
-}
-
-@media (min-width: 769px) {
-  .blog-post-container{ 
-    width: 60vmax;
-  }
-}
-@media (max-width: 768px) {
-  .blog-post-container {
-  width: 80vmax;
-  }
-}
-@media (max-width: 370px) {
-  .blog-post-container {
-  width: 90vmax;
-  }
-}
-.blog-post-container div {
   margin: 20px 0px;
   padding: 5px; 
   border: .5px black solid;
+  width: 70vmax;
 }
-
 
 .blog-post-container h2 {
   font-size: 1.5vw;
@@ -268,8 +260,6 @@ padding: 15px;
   margin: 5px;
   color:#090300; 
  }
-
- /* Headers currently have their own gloabl properties thats why colours are chaning */
 
 
  .blog-link-container {
@@ -311,6 +301,8 @@ padding: 15px;
 
 
 /*has to be a more effecient way to write the media qs */
+   
+/* tablet media qs */
 
 @media  (max-width: 768px) {
   body {
@@ -318,19 +310,83 @@ padding: 15px;
   }
  }
 
- @media (max-width: 768px) {
-  .blog-post-container p {
-      font-size: 4vw;
+  @media (max-width: 768px) {
+    .blog-container {
+    width: 95vmax;
     }
   }
-   
+
+  @media (max-width: 768px) {
+    .blog-post-container {
+    width: 60vmax;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .blog-post-container p {
+        font-size: 4vw;
+      }
+   }
+     
 
 
+  @media (max-width: 768px) {
+  .blog-post-container h2 {
+    font-size: 3vw;
+   }
+  }
+
+  @media (max-width: 768px) {
+ .blog-container h3 {
+    font-size: 3vw; 
+   }
+  }
+
+  @media (max-width: 768px) {
+   .blog-post-container h4 {
+    font-size: 3vw;
+   }
+  }
+
+
+  @media (max-width: 768px) {
+    .blog-link-container div li {
+      margin: 15px 0px;
+      font-size: 2vw;
+    
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .blog-link-container  {
+      font-size: 2vw;
+    
+    }
+  }
+
+
+/* mobile media qs */
 
 @media  (max-width: 370px) {
  body {
   color: red;
  }
+}
+
+@media (max-width: 370px) {
+  nav li {
+    margin: 0px 4px;
+    font-size: 5vw;
+  }
+}
+
+
+
+@media (max-width: 370px) {
+  .blog-post-container {
+  width: 80vmax;
+  }
 }
 
 @media (max-width: 370px) {
@@ -345,19 +401,40 @@ padding: 15px;
     }
   }
 
-@media (max-width: 370px) {
-  nav li {
-    float: center; 
-    margin: 4px;
-    font-size: 5vw;
-  }
-}
-
   @media (max-width: 370px) {
+    .blog-post-container h2 {
+      font-size: 4vw;
+     }
+    }
+  
+    @media (max-width: 370px) {
+   .blog-container h3 {
+      font-size: 4vw; 
+     }
+    }
+  
+    @media (max-width: 370px) {
+     .blog-post-container h4 {
+      font-size: 4vw;
+     }
+    }
+
+    @media (max-width: 370px) {
+      .blog-link-container  {
+        font-size: 4vw;
+        width: 8vmax;
+      
+      }
+    }
+
+
+@media (max-width: 370px) {
     .blog-link-container div li {
       margin: 15px 0px;
       font-size: 4vw;
     
     }
   }
+
+
    

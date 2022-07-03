@@ -8,111 +8,109 @@
   </head>
   <body>
 
-    <div class ="nav-container">
-      <nav>
+      <nav class ="nav-container">
         <ul>
           <li> <a href="../blog/MarginsBlogPost.html">Tech Blog</a> </li>
           <li> <a href="../blog/blogpage.html">Blog</a> </li>
           <li> <a href="../index.html">Home</a> </li> 
         </ul>
-     </nav>
-    </div>
+    </nav>
 
 
 
-  <div>
-    <h1>Margins, Padding and Borders</h1>
-    <h2> Explanation of what they are and their differences</h2>
-    <h3>29 June 2022</h3>
-  
-    <br>
-  </div>  
-
-  <!-- 
-    -->
-  <section class="techblog-container">    
-    <div class="non-box-div">
-    <h2> CSS Padding, Margins and Borders: </h2>
-                 
-    <p> Padding, Margins and borders are methods of creating space around an element with some key differences. 
-    Lets start with Margins and padding first. At it's simplest; Margins are a way of creating emtpy space <span><em> around</em></span> an element and 
-      Padding is a way of creating space <span><em>inside</em></span> an element.
-    </P>
-    
-  
-    <p> It is a lot easier to understand the difference between these ideas when we think about about the element as a block shape rather than, for example, just some text.
-      Take a box shape. Margins will change the space outside of the box, padding will change the space inside of the box. 
-      You can picture it here as this box: 
-
-      <div class ="box"></div>
-
-      <p>If you look at the red line (this is actually the border, which we will come back to but for now we will just use it to locate and speak about the edge.) Margins go from the red line out and Padding goes from the red line in.
-      </p>
-
-    
-    <p>
-      Now lets think about it specifcally as some text in a box. In fact <em>specfically all this text in these boxes.</em> 
-    
-      We have some text with a surrounding box with a background colour. The distance/space between this text and the start of the background-colour box is the padding.
-      The distance between the edge of that box and the bigger box surrounding it is the margin. 
-    </p>
-
-    <p>
-      To be more accurate both Margins, padding and borders <em>add</em> space to your element. This means that padding will change the size of your element/block (and therefore sometimes the shape) where as Margins will change the distances between that block/element 
-      and another block/element. 
-      </p>
-
-    <p>If we go back to our pink box and add some text you can see it's position in the box. This currently has no padding.</p> 
-      <div class ="box">
-        Some text
-      </div>
-  
-      <p>Here we can see i've added 200 pixels of padding, which has created some space around the text but within the edge/red line.</p> 
-      <div class ="box-2">
-        Some text
-      </div>
-
-      <p>
-      Obviously over the top but you can now see that padding adds space to your element. Margins do the same but it is invisible. 
-      Look what happens If we create another box the same size as the original pink box but with a 200 pixel Margin and no padding. 
-      </p>
-
-      <div class ="box-3">
-        Some text
-      </div>
-    <p>
-      The text in the pink box is right next to the border and the box is much smaller because there is no padding (<em>the space between the text and the edge/red line.</em>)
-      But the distance from the pink box and the text boxes above and below has increased because I added Margins on the top and bottom of 200 pixels. 
-    </p>
-
-  <p>Borders take that edge line and creates space with it. The line itself is bigger. (Unless specified there will be no border). So it makes space inbeween the margins and padding. Below is a pink box with much a thicker border.
-  </p>
-
-    <div class ="box-4">
-      Some text
-      </div>
-
-      <p>
-        It's important to note that a border makes it's own space sperate, from the margins or padding.<br><em>The border does not 'draw' over any margins or padding.</em>
-        That means for the elements total pixel count you must add <em>all</em> of the values together. If we were to caclulate the distance from top to bottom here we must add the top border of 15 pixels to the current height of 200 pixels and the bottom border of 15 pixels giving us 230 pixels
-        <br>
-      </p>
-      <p>
-        Lets draw another box with padding of 50 pixels above and below. Now if we were to calculate the height of this box we would add the 15 pixels border at the top, the 50 pixels of padding on the top the original 200 pixel height the 20 pixels on the bottom and the 15 pixels border on the bottom.
-        Giving us 330 pixels. Also note because I have added padding only top and bottom so the shape of the box has changed. 
-
-    <div class="box-5">
-      Some text
-    </div>
-  </div>
-  </section>
-    
-
-  
     <div>
-      <p id ="bottomlink" >
-      <a href="../index.html">Home</a>
+      <h1>Margins, Padding and Borders</h1>
+      <h2> Explanation of what they are and their differences</h2>
+      <h3>29 June 2022</h3>
+    
+      <br>
+    </div>  
+
+    <!-- 
+      -->
+    <section class="techblog-container">    
+      <div class="non-box-div">
+      <h2> CSS Padding, Margins and Borders: </h2>
+                  
+      <p> Padding, Margins and borders are methods of creating space around an element with some key differences. 
+      Lets start with Margins and padding first. At it's simplest; Margins are a way of creating emtpy space <span><em> around</em></span> an element and 
+        Padding is a way of creating space <span><em>inside</em></span> an element.
+      </P>
+      
+    
+      <p> It is a lot easier to understand the difference between these ideas when we think about about the element as a block shape rather than, for example, just some text.
+        Take a box shape. Margins will change the space outside of the box, padding will change the space inside of the box. 
+        You can picture it here as this box: 
+
+        <div class ="box"></div>
+
+        <p>If you look at the red line (this is actually the border, which we will come back to but for now we will just use it to locate and speak about the edge.) Margins go from the red line out and Padding goes from the red line in.
+        </p>
+
+      
+      <p>
+        Now lets think about it specifcally as some text in a box. In fact <em>specfically all this text in these boxes.</em> 
+      
+        We have some text with a surrounding box with a background colour. The distance/space between this text and the start of the background-colour box is the padding.
+        The distance between the edge of that box and the bigger box surrounding it is the margin. 
       </p>
+
+      <p>
+        To be more accurate both Margins, padding and borders <em>add</em> space to your element. This means that padding will change the size of your element/block (and therefore sometimes the shape) where as Margins will change the distances between that block/element 
+        and another block/element. 
+        </p>
+
+      <p>If we go back to our pink box and add some text you can see it's position in the box. This currently has no padding.</p> 
+        <div class ="box">
+          Some text
+        </div>
+    
+        <p>Here we can see i've added 200 pixels of padding, which has created some space around the text but within the edge/red line.</p> 
+        <div class ="box-2">
+          Some text
+        </div>
+
+        <p>
+        Obviously over the top but you can now see that padding adds space to your element. Margins do the same but it is invisible. 
+        Look what happens If we create another box the same size as the original pink box but with a 200 pixel Margin and no padding. 
+        </p>
+
+        <div class ="box-3">
+          Some text
+        </div>
+      <p>
+        The text in the pink box is right next to the border and the box is much smaller because there is no padding (<em>the space between the text and the edge/red line.</em>)
+        But the distance from the pink box and the text boxes above and below has increased because I added Margins on the top and bottom of 200 pixels. 
+      </p>
+
+    <p>Borders take that edge line and creates space with it. The line itself is bigger. (Unless specified there will be no border). So it makes space inbeween the margins and padding. Below is a pink box with much a thicker border.
+    </p>
+
+      <div class ="box-4">
+        Some text
+        </div>
+
+        <p>
+          It's important to note that a border makes it's own space sperate, from the margins or padding.<br><em>The border does not 'draw' over any margins or padding.</em>
+          That means for the elements total pixel count you must add <em>all</em> of the values together. If we were to caclulate the distance from top to bottom here we must add the top border of 15 pixels to the current height of 200 pixels and the bottom border of 15 pixels giving us 230 pixels
+          <br>
+        </p>
+        <p>
+          Lets draw another box with padding of 50 pixels above and below. Now if we were to calculate the height of this box we would add the 15 pixels border at the top, the 50 pixels of padding on the top the original 200 pixel height the 20 pixels on the bottom and the 15 pixels border on the bottom.
+          Giving us 330 pixels. Also note because I have added padding only top and bottom so the shape of the box has changed. 
+
+      <div class="box-5">
+        Some text
+      </div>
     </div>
+    </section>
+      
+
+    
+      <footer>
+        <p id ="bottomlink" >
+        <a href="../index.html">Home</a>
+        </p>
+      </footer> 
   </body>
 </html>
