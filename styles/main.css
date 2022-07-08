@@ -5,133 +5,13 @@ body {
 
 }
 
-a {
-  color: #090300;
-  text-decoration: none;
-}
-
-.index-container {
-  border: 3px red solid;
-  margin: 30px;
-  display: flex;
-  flex-direction: column;
-}
-
-header {
-  background-color: azure;
-}
-
- h1, h2, h3, h4{
-  text-align: center;
-  font-family:Arial, Helvetica, sans-serif;
+footer {
+  background-color:#7D9D9C;
   margin: 0px;
-  padding: 0.4em;
-
+  padding: .5em;
 }
 
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h4 {
-  font-size: .7rem;
-}
-
-.index-container section {
-  font-size: 1rem;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  
-}
-
-.index-container p {
- 
-  max-width: 45ch; 
-  text-align: left;
-}
-
-.index-container div {
-  border: 3px black solid;
-  background-color:aqua;
-  padding-left: 0.2em; 
-  margin: 0px;
-  text-align: center;
-
-}
-
-.img {
-  border: 1px black solid;
-  width: 30%;
-  height: auto;
-  padding: 0px; 
-
-  
-}
-
-.blog-container {
-  background-color: blue;
-  margin: 0px;
-  padding: 0.1em;
-  border: 3px  red solid;
-  display: flex;
-  flex-direction: row;
-
-}
-
-
-.blog-sidebar {
-  width: 8%;
-  background-color: blanchedalmond;
-  border: 2px black solid;
-}
-
-.blog-sidebar p {
-  font-family:Arial, Helvetica, sans-serif;
-  text-align: left;
-  font-size: 1.3rem;
-  Margin: 0px;
-  padding: .5rem;
-}
-
-
-.blog-sidebar ul {
-  list-style: none;
-  font-family:'Times New Roman', Times, serif;
-  padding: .7rem;
-  margin :0px;
-}
-
-
-.blog-content {
-  width: 80%;
-  max-width: 75ch; 
-  padding: 2em;
-  background-color: blanchedalmond;
-}
-
-.blog-content  h4 {
- text-align: left;
-}
-
-
-.blog-content p {
-  
-   
-  text-align: left;
-  font-size: 1rem;
-
-}
-
-
-
-
-
-
-
-/* /* --- nav --- */
+/* --- nav --- */
 
 
 .nav-container {
@@ -164,7 +44,211 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
 }
+
+
+/* end nav */
+
+
+a {
+  color: #090300;
+  text-decoration: none;
+}
+
+
+.index-container {
+
+  margin: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+
+header {
+  background-color:rgb(236, 235, 234);
+  margin: 0px;
+  border: .5px black solid;
+}
+
+ h1, h2, h3, h4{
+  text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0.4em;
+
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: .7rem;
+}
+
+.index-container section {
+  font-size: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+.index-container p {
  
+  max-width: 45ch; 
+  text-align: left;
+  margin: 0px;
+}
+
+.index-container div {
+ 
+  background-color: white;
+  padding-left: 0.2em; 
+  /* text-align: center; */
+  
+
+}
+
+.index-container article {
+  margin-left: auto;
+  margin-right: auto;
+ 
+
+}
+
+.img {
+  width: 30%;
+  height: auto;
+  padding: 0px; 
+
+  
+}
+
+.blog-container {
+  background-color: white;
+  margin: 0px;
+  /* padding: 0.1em; */
+  /* border: 3px  red solid; */
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+.blog-sidebar {
+  width: 10%;
+  background-color: rgb(236, 235, 234);
+  margin:0px;
+  border: .5px black solid;
+  font-size: 1.5rem;
+}
+
+.blog-sidebar p {
+  font-family:Arial, Helvetica, sans-serif;
+  text-align: left;
+  Margin: 0px;
+  padding: .5rem;
+}
+
+
+ .blog-sidebar ul {
+  list-style: none;
+  font-family:'Times New Roman', Times, serif;
+  font-style: italic;
+  padding: .7rem;
+} 
+
+.blog-sidebar li {
+
+  margin: .5rem;
+}
+
+
+.blog-content {
+  width: 70%;
+  max-width: 75ch; 
+  padding: 2em;
+  background-color: white;
+}
+
+.blog-content  h4 {
+ text-align: left;
+}
+
+
+.blog-content p {
+  
+   
+  text-align: left;
+  font-size: 1rem;
+
+}
+
+#core {
+
+}
+
+#tech {
+
+}
+
+
+
+@media (max-width: 768px) {
+  .blog-content {
+  width: 90%;
+  font-size: 2rem;
+  padding: .5em;
+  }
+}
+
+@media (max-width: 768px ) {
+  .blog-container {
+    flex-direction: column;
+  }
+}
+ 
+@media (max-width: 768px) {
+  .blog-sidebar {
+     width: 100%;
+    font-size: .9rem;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    padding: .5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-sidebar ul, .blog-sidebar p{
+    margin: 0px;
+    padding: 0px;
+    font-size: .9rem;
+    list-style: none;
+   
+
+  }
+}
+
+@media (max-width: 768px) {
+ .blog-sidebar ul li{
+  list-style: none;
+
+
+  }
+}
+
+
+
+/* @media (max-width: 768px) {
+  .blog-sidebar p{
+    margin: 0px;
+    padding: 0px;
+    font-size: .9rem; */
+
+  
 
 /*--- main ---*/
 /*
@@ -428,145 +512,5 @@ padding: 15px;
 #learningplan{
 
 }
+*/
 
-
-
-
-/*has to be a more effecient way to write the media qs */
-   
-/* 
-
-@media  (max-width: 768px) {
-  body {
-   color: green;
-  }
- }
-
-  @media (max-width: 768px) {
-    .blog-container {
-    width: 95vmax;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .blog-post-container {
-    width: 60vmax;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .blog-post-container p {
-        font-size: 4vw;
-      }
-   }
-     
-
-
-  @media (max-width: 768px) {
-  .blog-post-container h2 {
-    font-size: 3vw;
-   }
-  }
-
-  @media (max-width: 768px) {
- .blog-container h3 {
-    font-size: 3vw; 
-   }
-  }
-
-  @media (max-width: 768px) {
-   .blog-post-container h4 {
-    font-size: 3vw;
-   }
-  }
-
-
-  @media (max-width: 768px) {
-    .blog-link-container div li {
-      margin: 15px 0px;
-      font-size: 2vw;
-    
-    }
-  }
-
-
-  @media (max-width: 768px) {
-    .blog-link-container  {
-      font-size: 2vw;
-    
-    }
-  }
-
-
-
-
-@media  (max-width: 370px) {
- body {
-  color: red;
- }
-}
-
-@media (max-width: 370px) {
-  nav li {
-    margin: 0px 4px;
-    font-size: 5vw;
-  }
-}
-
-
-
-@media (max-width: 370px) {
-  .blog-post-container {
-  width: 80vmax;
-  }
-}
-
-@media (max-width: 370px) {
-.blog-post-container p {
-    font-size:6vw;
-  }
-}
- 
-@media (max-width: 370px) {
-  .blog-post-container p {
-      font-size:6vw;
-    }
-  }
-
-  @media (max-width: 370px) {
-    .blog-post-container h2 {
-      font-size: 4vw;
-     }
-    }
-  
-    @media (max-width: 370px) {
-   .blog-container h3 {
-      font-size: 4vw; 
-     }
-    }
-  
-    @media (max-width: 370px) {
-     .blog-post-container h4 {
-      font-size: 4vw;
-     }
-    }
-
-    @media (max-width: 370px) {
-      .blog-link-container  {
-        font-size: 4vw;
-        width: 8vmax;
-      
-      }
-    }
-
-
-@media (max-width: 370px) {
-    .blog-link-container div li {
-      margin: 15px 0px;
-      font-size: 4vw;
-    
-    }
-  }
-
-
-     */
